@@ -34,5 +34,19 @@ namespace Method_Challenges_EdaBit
             else
                 return false;
         }
+
+        public string EvenOrOdd(int num)
+        {
+            string evenOrOdd;
+            if(num%2 == 0)
+            {
+                evenOrOdd = "even";
+            }
+            else
+            {
+                evenOrOdd = "odd";
+            }
+            return evenOrOdd;
+        }
     }
 }

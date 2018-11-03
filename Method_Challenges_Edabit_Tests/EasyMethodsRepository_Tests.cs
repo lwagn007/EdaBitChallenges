@@ -82,5 +82,24 @@ namespace Method_Challenges_Edabit_Tests
             Assert.AreEqual(actualOne, expectedOne);
             Assert.AreEqual(actualTwo, expectedTwo);
         }
+
+        [TestMethod]
+        public void FifthChallenge_EvenOrOdd_StringShouldBeTheSame()
+        {
+            //--Arrange
+            string expected = "even";
+            string expectedOne = "odd";
+            string expectedTwo = "even";
+
+            //--Act
+            string actual = _easyRepo.EvenOrOdd(1994);
+            string actualOne = _easyRepo.EvenOrOdd(23);
+            string actualTwo = _easyRepo.EvenOrOdd(2006);
+
+            //--Assert
+            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(actualOne, expectedOne);
+            Assert.AreEqual(actualTwo, expectedTwo);
+        }
     }
 }

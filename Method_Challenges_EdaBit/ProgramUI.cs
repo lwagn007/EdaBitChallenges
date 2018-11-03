@@ -20,7 +20,7 @@ namespace Method_Challenges_EdaBit
         public void Run()
         {
             _console.WriteLine("Welcome, I hope testing your method works out well for you!");
-            bool truth = FourthChallenge();
+            string truth = FifthChallenge();
             Console.WriteLine(truth);
         }
 
@@ -53,6 +53,12 @@ namespace Method_Challenges_EdaBit
 
             bool truth = _easyRepo.IsItChristmasEve(year, month, day);
             return truth;
+        }
+
+        public string FifthChallenge()
+        {
+            string evenOrOdd = _easyRepo.EvenOrOdd(2);
+            return evenOrOdd;
         }
     }
 }
