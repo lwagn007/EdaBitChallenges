@@ -18,5 +18,13 @@ namespace Method_Challenges_EdaBit
             int addition = a + b;
             return addition;
         }
+
+        public bool LessThanOrEqualToZero(double a)
+        {
+            if (a <= 0d)
+                return true;
+            else
+                return false;
+        }
     }
 }

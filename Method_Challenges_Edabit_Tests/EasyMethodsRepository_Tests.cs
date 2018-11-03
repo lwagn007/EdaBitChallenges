@@ -38,6 +38,26 @@ namespace Method_Challenges_Edabit_Tests
             int actual = _easyRepo.Sum(4, 5);
             int actualOne = _easyRepo.Sum(10, 15);
             int actualTwo = _easyRepo.Sum(30, 30);
+
+            //--Assert
+            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(actualOne, expectedOne);
+            Assert.AreEqual(actualTwo, expectedTwo);
+        }
+
+        [TestMethod]
+        public void ThirdChallenge_NumberLessThanOrEqualToZero_BoolShouldBeEqual()
+        {
+            //--Arrange
+            bool expected = true;
+            bool expectedOne = false;
+            bool expectedTwo = true;
+
+            //--Act
+            bool actual = _easyRepo.LessThanOrEqualToZero(-10d);
+            bool actualOne = _easyRepo.LessThanOrEqualToZero(45d);
+            bool actualTwo = _easyRepo.LessThanOrEqualToZero(0d);
+
             //--Assert
             Assert.AreEqual(actual, expected);
             Assert.AreEqual(actualOne, expectedOne);
