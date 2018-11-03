@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Method_Challenges_EdaBit", "Method_Challenges_EdaBit\Method_Challenges_EdaBit.csproj", "{D839D87A-E83D-497F-B067-3219935B4D60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D839D87A-E83D-497F-B067-3219935B4D60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D839D87A-E83D-497F-B067-3219935B4D60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D839D87A-E83D-497F-B067-3219935B4D60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D839D87A-E83D-497F-B067-3219935B4D60}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6169C835-E362-4198-ABD8-89F941271F8C}
+	EndGlobalSection
+EndGlobal
