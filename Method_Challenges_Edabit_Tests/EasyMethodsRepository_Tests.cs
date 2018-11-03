@@ -63,5 +63,24 @@ namespace Method_Challenges_Edabit_Tests
             Assert.AreEqual(actualOne, expectedOne);
             Assert.AreEqual(actualTwo, expectedTwo);
         }
+
+        [TestMethod]
+        public void FourthChallenge_IntCheckIfChristmasEve_BoolShouldBeEqual()
+        {
+            //--Arrange
+            bool expected = true;
+            bool expectedOne = false;
+            bool expectedTwo = false;
+
+            //--Act
+            bool actual = _easyRepo.IsItChristmasEve(1994, 12, 24);
+            bool actualOne = _easyRepo.IsItChristmasEve(1994, 12, 23);
+            bool actualTwo = _easyRepo.IsItChristmasEve(2005, 12, 25);
+
+            //--Assert
+            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(actualOne, expectedOne);
+            Assert.AreEqual(actualTwo, expectedTwo);
+        }
     }
 }

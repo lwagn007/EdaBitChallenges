@@ -26,5 +26,13 @@ namespace Method_Challenges_EdaBit
             else
                 return false;
         }
+
+        public bool IsItChristmasEve(int year, int month, int day)
+        {
+            if (month == 12 && day == 24)
+                return true;
+            else
+                return false;
+        }
     }
 }
