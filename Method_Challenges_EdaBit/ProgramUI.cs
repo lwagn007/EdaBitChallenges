@@ -20,7 +20,8 @@ namespace Method_Challenges_EdaBit
         public void Run()
         {
             _console.WriteLine("Welcome, I hope testing your method works out well for you!");
-            string truth = FifthChallenge();
+            object[] array = { "Hello", "I am", "Lawrence", "Wagner" };
+            object truth = SixthChallenge(array);
             Console.WriteLine(truth);
         }
 
@@ -59,6 +60,12 @@ namespace Method_Challenges_EdaBit
         {
             string evenOrOdd = _easyRepo.EvenOrOdd(2);
             return evenOrOdd;
+        }
+
+        public object SixthChallenge(object[] arr)
+        {
+            object lastItem = _easyRepo.GetLastItem(arr);
+            return lastItem;
         }
     }
 }

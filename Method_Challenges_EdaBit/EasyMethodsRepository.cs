@@ -48,5 +48,11 @@ namespace Method_Challenges_EdaBit
             }
             return evenOrOdd;
         }
+
+        public object GetLastItem(object[] arr)
+        {
+            object lastItem = arr.Last();
+            return lastItem;
+        }
     }
 }

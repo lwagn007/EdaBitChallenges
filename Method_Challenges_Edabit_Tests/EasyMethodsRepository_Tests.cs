@@ -101,5 +101,27 @@ namespace Method_Challenges_Edabit_Tests
             Assert.AreEqual(actualOne, expectedOne);
             Assert.AreEqual(actualTwo, expectedTwo);
         }
+
+        [TestMethod]
+        public void SixthChallenge_GetLastItem_ObjectShouldBeTheSame()
+        {
+            //--Arrange
+            object[] array = { "what", "hmmmm...", "hello" };
+            object[] arrayOne = { 3, 10, 25, 30, 25, 18, 25 };
+            object[] arrayTwo = { false, false, true, false, true };
+            object expected = "hello";
+            object expectedOne = 25;
+            object expectedTwo = true;
+
+            //--Act
+            object actual = _easyRepo.GetLastItem(array);
+            object actualOne = _easyRepo.GetLastItem(arrayOne);
+            object actualTwo = _easyRepo.GetLastItem(arrayTwo);
+
+            //--Assert
+            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(actualOne, expectedOne);
+            Assert.AreEqual(actualTwo, expectedTwo);
+        }
     }
 }
