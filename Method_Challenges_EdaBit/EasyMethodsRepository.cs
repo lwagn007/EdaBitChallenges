@@ -12,5 +12,11 @@ namespace Method_Challenges_EdaBit
         {
             return true;
         }
+
+        public int Sum(int a, int b)
+        {
+            int addition = a + b;
+            return addition;
+        }
     }
 }

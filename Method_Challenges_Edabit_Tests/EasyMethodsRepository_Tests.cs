@@ -25,5 +25,23 @@ namespace Method_Challenges_Edabit_Tests
             //--Assert
             Assert.AreEqual(actual, expected);
         }
+
+        [TestMethod]
+        public void SecondChallenge_ReturnSumOfTwoInts_IntsShouldBeEqual()
+        {
+            //--Arrange
+            int expected = 9;
+            int expectedOne = 25;
+            int expectedTwo = 60;
+
+            //--Act
+            int actual = _easyRepo.Sum(4, 5);
+            int actualOne = _easyRepo.Sum(10, 15);
+            int actualTwo = _easyRepo.Sum(30, 30);
+            //--Assert
+            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(actualOne, expectedOne);
+            Assert.AreEqual(actualTwo, expectedTwo);
+        }
     }
 }

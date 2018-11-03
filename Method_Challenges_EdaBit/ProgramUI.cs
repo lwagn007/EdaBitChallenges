@@ -20,7 +20,8 @@ namespace Method_Challenges_EdaBit
         public void Run()
         {
             _console.WriteLine("Welcome, I hope testing your method works out well for you!");
-            FirstChallenge();
+            int sum = SecondChallenge();
+            Console.WriteLine(sum);
         }
 
         public bool FirstChallenge()
@@ -28,6 +29,14 @@ namespace Method_Challenges_EdaBit
             bool truth = _easyRepo.ReturnTrue();
             _console.WriteLine(truth);
             return truth;
+        }
+
+        public int SecondChallenge()
+        {
+            int a = 15;
+            int b = 29;
+            int sum = _easyRepo.Sum(a, b);
+            return sum;
         }
     }
 }
