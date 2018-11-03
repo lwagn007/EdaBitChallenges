@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace Method_Challenges_EdaBit
 {
-    class Program
+    public class EasyMethodsRepository
     {
-        static void Main(string[] args)
+        public bool ReturnTrue()
         {
-            ProgramUI program = new ProgramUI(new RealConsole());
-            program.Run();
+            return true;
         }
     }
 }

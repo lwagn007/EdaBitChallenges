@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace Method_Challenges_EdaBit
 {
-    class Program
+    public class HardMethodsRepository
     {
-        static void Main(string[] args)
-        {
-            ProgramUI program = new ProgramUI(new RealConsole());
-            program.Run();
-        }
     }
 }

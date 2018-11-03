@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Method_Challenges_EdaBit", "Method_Challenges_EdaBit\Method_Challenges_EdaBit.csproj", "{D839D87A-E83D-497F-B067-3219935B4D60}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Method_Challenges_Edabit_Tests", "Method_Challenges_Edabit_Tests\Method_Challenges_Edabit_Tests.csproj", "{3F72A2F9-827F-4506-9731-87B8F3F80BEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D839D87A-E83D-497F-B067-3219935B4D60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D839D87A-E83D-497F-B067-3219935B4D60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D839D87A-E83D-497F-B067-3219935B4D60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F72A2F9-827F-4506-9731-87B8F3F80BEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F72A2F9-827F-4506-9731-87B8F3F80BEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F72A2F9-827F-4506-9731-87B8F3F80BEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F72A2F9-827F-4506-9731-87B8F3F80BEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
