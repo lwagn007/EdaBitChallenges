@@ -20,9 +20,14 @@ namespace Method_Challenges_EdaBit
         public void Run()
         {
             _console.WriteLine("Welcome, I hope testing your method works out well for you!");
-            double[] array = { 1, 3, 4, 5, 6, 1 };
-            object truth = EighthChallenge(array);
+            string one = "Marlin";
+            string two = "lint";
+            bool truth = NinthChallenge(one, two);
             Console.WriteLine(truth);
+            string three = "Gentlemen";
+            string four = "men";
+            bool truthOne = NinthChallenge(three, four);
+            Console.WriteLine(truthOne);
         }
 
         public bool FirstChallenge()
@@ -78,6 +83,12 @@ namespace Method_Challenges_EdaBit
         {
             double max = _easyRepo.FindSmallestNumber(arr);
             return max;
+        }
+
+        public bool NinthChallenge(string stringOne, string stringTwo)
+        {
+            bool truth = _easyRepo.CheckEnding(stringOne, stringTwo);
+            return truth;
         }
     }
 }

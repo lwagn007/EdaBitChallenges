@@ -167,5 +167,25 @@ namespace Method_Challenges_Edabit_Tests
             Assert.AreEqual(actualOne, expectedOne);
             Assert.AreEqual(actualTwo, expectedTwo);
         }
+
+        [TestMethod]
+        public void NinthChallenge_CheckEndingOfString_BoolValueShouldComeBackTrueOrFalseBasedOnStrings()
+        {
+            //--Arrange
+            string one = "sir";
+            string two = "r";
+            string three = "what is your name gentleman marlin fish";
+            string four = "what";
+            bool expected = true;
+            bool expectedOne = false;
+
+            //--Act
+            bool actual = _easyRepo.CheckEnding(one, two);
+            bool actualOne = _easyRepo.CheckEnding(three, four);
+
+            //--Assert
+            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(actualOne, expectedOne);
+        }
     }
 }

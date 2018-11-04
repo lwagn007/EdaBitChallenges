@@ -66,5 +66,11 @@ namespace Method_Challenges_EdaBit
             double value = arr.Min();
             return value;
         }
+
+        public bool CheckEnding(string stringOne, string stringTwo)
+        {
+            bool endsWithString = stringOne.EndsWith(stringTwo);
+            return endsWithString;
+        }
     }
 }
