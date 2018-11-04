@@ -145,5 +145,27 @@ namespace Method_Challenges_Edabit_Tests
             Assert.AreEqual(actualOne, expectedOne);
             Assert.AreEqual(actualTwo, expectedTwo);
         }
+
+        [TestMethod]
+        public void EighthChallenge_SmallestIntInArray_IntShouldBeTheSame()
+        {
+            //--Arrange
+            double[] array = { 1, 5, 55, 983 };
+            double[] arrayOne = { 3, 10, 25, 30, 25, 18, 25 };
+            double[] arrayTwo = { 10, 15, 10000, 1, 100003 };
+            double expected = 1;
+            double expectedOne = 3;
+            double expectedTwo = 1;
+
+            //--Act
+            double actual = _easyRepo.FindSmallestNumber(array);
+            double actualOne = _easyRepo.FindSmallestNumber(arrayOne);
+            double actualTwo = _easyRepo.FindSmallestNumber(arrayTwo);
+
+            //--Assert
+            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(actualOne, expectedOne);
+            Assert.AreEqual(actualTwo, expectedTwo);
+        }
     }
 }

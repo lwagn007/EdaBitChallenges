@@ -20,8 +20,8 @@ namespace Method_Challenges_EdaBit
         public void Run()
         {
             _console.WriteLine("Welcome, I hope testing your method works out well for you!");
-            object[] array = { "Hello", "I am", "Lawrence", "Wagner" };
-            object truth = SixthChallenge(array);
+            double[] array = { 1, 3, 4, 5, 6, 1 };
+            object truth = EighthChallenge(array);
             Console.WriteLine(truth);
         }
 
@@ -71,6 +71,12 @@ namespace Method_Challenges_EdaBit
         public int SeventhChallenge(int[] arr)
         {
             int max = _easyRepo.FindLargestNumber(arr);
+            return max;
+        }
+
+        public double EighthChallenge(double[] arr)
+        {
+            double max = _easyRepo.FindSmallestNumber(arr);
             return max;
         }
     }

@@ -60,5 +60,11 @@ namespace Method_Challenges_EdaBit
             int value = arr.Max();
             return value;
         }
+
+        public double FindSmallestNumber(double[] arr)
+        {
+            double value = arr.Min();
+            return value;
+        }
     }
 }
