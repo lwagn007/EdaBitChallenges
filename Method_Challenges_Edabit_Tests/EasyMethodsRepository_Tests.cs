@@ -123,5 +123,27 @@ namespace Method_Challenges_Edabit_Tests
             Assert.AreEqual(actualOne, expectedOne);
             Assert.AreEqual(actualTwo, expectedTwo);
         }
+
+        [TestMethod]
+        public void SeventhChallenge_LargestIntInArray_IntShouldBeTheSame()
+        {
+            //--Arrange
+            int[] array = { 1, 5, 55, 983 };
+            int[] arrayOne = { 3, 10, 25, 30, 25, 18, 25 };
+            int[] arrayTwo = { 10, 15, 10000, 1, 100003 };
+            int expected = 983;
+            int expectedOne = 30;
+            int expectedTwo = 100003;
+
+            //--Act
+            int actual = _easyRepo.FindLargestNumber(array);
+            int actualOne = _easyRepo.FindLargestNumber(arrayOne);
+            int actualTwo = _easyRepo.FindLargestNumber(arrayTwo);
+
+            //--Assert
+            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(actualOne, expectedOne);
+            Assert.AreEqual(actualTwo, expectedTwo);
+        }
     }
 }

@@ -54,5 +54,11 @@ namespace Method_Challenges_EdaBit
             object lastItem = arr.Last();
             return lastItem;
         }
+
+        public int FindLargestNumber(int[] arr)
+        {
+            int value = arr.Max();
+            return value;
+        }
     }
 }

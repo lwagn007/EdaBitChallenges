@@ -67,5 +67,11 @@ namespace Method_Challenges_EdaBit
             object lastItem = _easyRepo.GetLastItem(arr);
             return lastItem;
         }
+
+        public int SeventhChallenge(int[] arr)
+        {
+            int max = _easyRepo.FindLargestNumber(arr);
+            return max;
+        }
     }
 }
