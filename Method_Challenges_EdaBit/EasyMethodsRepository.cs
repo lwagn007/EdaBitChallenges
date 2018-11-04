@@ -72,5 +72,24 @@ namespace Method_Challenges_EdaBit
             bool endsWithString = stringOne.EndsWith(stringTwo);
             return endsWithString;
         }
+
+        public string VerifySubStrings(string main, string head, string body, string tail)
+        {
+            string message;
+
+            bool first = main.StartsWith(head);
+            bool second = main.Contains(body);
+            bool third = main.EndsWith(tail);
+
+            if (first == true && second == true && third == true)
+            {
+                message = "My head, body, and tail.";
+            }
+            else
+            {
+                message = "Incomplete.";
+            }
+            return message;   
+        }
     }
 }

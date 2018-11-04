@@ -187,5 +187,22 @@ namespace Method_Challenges_Edabit_Tests
             Assert.AreEqual(actual, expected);
             Assert.AreEqual(actualOne, expectedOne);
         }
+
+        [TestMethod]
+        public void TenthChallenge_CheckEndingOfString_BoolValueShouldComeBackTrueOrFalseBasedOnStrings()
+        {
+            //--Arrange
+            string main = "what is your name gentleman marlin fish";
+            string head = "what is";
+            string body = "your name gentleman";
+            string tail = "marlin fish";
+            string expected = "My head, body, and tail.";
+
+            //--Act
+            string actual = _easyRepo.VerifySubStrings(main, head, body, tail);
+
+            //--Assert
+            Assert.AreEqual(actual, expected);
+        }
     }
 }

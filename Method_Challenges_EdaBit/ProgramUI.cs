@@ -20,14 +20,12 @@ namespace Method_Challenges_EdaBit
         public void Run()
         {
             _console.WriteLine("Welcome, I hope testing your method works out well for you!");
-            string one = "Marlin";
-            string two = "lint";
-            bool truth = NinthChallenge(one, two);
-            Console.WriteLine(truth);
-            string three = "Gentlemen";
-            string four = "men";
-            bool truthOne = NinthChallenge(three, four);
-            Console.WriteLine(truthOne);
+            string main = "Marlin, is the fish that the Old Man caught.";
+            string head = "Marlin,";
+            string body = "is the fish";
+            string tail = "that the Old Man caught.";
+            string truth = TenthChallenge(main, head, body, tail);
+            _console.WriteLine(truth);
         }
 
         public bool FirstChallenge()
@@ -89,6 +87,13 @@ namespace Method_Challenges_EdaBit
         {
             bool truth = _easyRepo.CheckEnding(stringOne, stringTwo);
             return truth;
+        }
+
+        public string TenthChallenge(string main, string head, string body, string tail)
+        {
+            string message = _easyRepo.VerifySubStrings(main, head, body, tail);
+            
+            return message;
         }
     }
 }
