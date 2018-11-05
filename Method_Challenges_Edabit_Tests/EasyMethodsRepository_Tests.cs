@@ -204,5 +204,47 @@ namespace Method_Challenges_Edabit_Tests
             //--Assert
             Assert.AreEqual(actual, expected);
         }
+
+        [TestMethod]
+        public void EleventhChallenge_AddUpIntsAfterIterationOfCount_IntValuesShouldBeEqual()
+        {
+            //--Arrange
+            int number = 5;
+            int expected = 15;
+
+            //--Act
+            int actual = _easyRepo.AddUp(number);
+
+            //--Assert
+            Assert.AreEqual(actual, expected);
+        }
+
+        [TestMethod]
+        public void TwelfthChallenge_FindMinAndMaxValueInArray_DoubleArraysShouldBeEqual()
+        {
+            //--Arrange
+            double[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            double[] arrayTwo = { 25, 32, 100092, 0.001 };
+            double[] expected = { 1, 10 };
+            double[] expectedTwo = { 0.001, 100092 };
+            //--Act
+            double[] actual = _easyRepo.FindMinAndMax(array); 
+            double[] actualTwo = _easyRepo.FindMinAndMax(arrayTwo); 
+
+            //--Assert
+            CollectionAssert.AreEqual(actual, expected);
+            CollectionAssert.AreEqual(actualTwo, expectedTwo);
+        }
+
+        [TestMethod]
+        public void Challenge_AddUpIntsAfterIterationOfCount_IntValuesShouldBeEqual()
+        {
+            //--Arrange
+            
+
+            //--Act
+
+            //--Assert
+        }
     }
 }

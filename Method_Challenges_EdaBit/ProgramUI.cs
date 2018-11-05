@@ -20,12 +20,6 @@ namespace Method_Challenges_EdaBit
         public void Run()
         {
             _console.WriteLine("Welcome, I hope testing your method works out well for you!");
-            string main = "Marlin, is the fish that the Old Man caught.";
-            string head = "Marlin,";
-            string body = "is the fish";
-            string tail = "that the Old Man caught.";
-            string truth = TenthChallenge(main, head, body, tail);
-            _console.WriteLine(truth);
         }
 
         public bool FirstChallenge()
@@ -92,8 +86,20 @@ namespace Method_Challenges_EdaBit
         public string TenthChallenge(string main, string head, string body, string tail)
         {
             string message = _easyRepo.VerifySubStrings(main, head, body, tail);
-            
+
             return message;
+        }
+
+        public int EleventhChallenge(int number)
+        {
+            int sum = _easyRepo.AddUp(number);
+            return sum;
+        }
+
+        public double[] TwelfthChallenge(double[] values)
+        {
+            double[] minMax = _easyRepo.FindMinAndMax(values);
+            return minMax;
         }
     }
 }

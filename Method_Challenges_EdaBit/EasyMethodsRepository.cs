@@ -91,5 +91,21 @@ namespace Method_Challenges_EdaBit
             }
             return message;   
         }
+
+        public int AddUp(int num)
+        {
+            int addedInt = 0;
+            for (int i = 1; i <= num; i++)
+            {
+                addedInt += i;
+            }
+            return addedInt;
+        }
+
+        public double[] FindMinAndMax(double[] values)
+        {
+            double[] minMax = { values.Min(), values.Max() };
+            return minMax;
+        }
     }
 }
